@@ -4,8 +4,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 ## Install php nginx supervisor
 RUN apt update && \
-    apt install -yf php-fpm php-cli php-gd php-mcrypt php-mysql php-curl nginx curl php-mbstring php-xml git supervisor && \
-    rm -rf /var/lib/apt/lists/*
+    apt install -yf php-fpm php-cli php-gd php-mcrypt php-mysql php-curl nginx curl php-mbstring php-xml git unzip supervisor
 
 # Composer
 RUN \
