@@ -10,7 +10,7 @@ RUN apt update && \
 RUN \
   curl -sS https://getcomposer.org/installer | php && \
   mv composer.phar /usr/local/bin/composer && \
-  composer config -g github-oauth.github.com aeff6491f52163a011cba0b6b6286f5492e25ab6 && \
+  composer config -g github-oauth.github.com dabaa55b7d28c3ebf9c2a1e5ce57f868786b5d94 && \
   php -v
 
 
