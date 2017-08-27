@@ -4,8 +4,8 @@ MAINTAINER Nurettin Topal <nurettin@ode.al>
 #set timezone => Turkey - Istanbul
 #https://wiki.alpinelinux.org/wiki/Setting_the_timezone
 RUN apk --update add tzdata --repository http://dl-4.alpinelinux.org/alpine/edge/testing
-RUN cp /usr/share/zoneinfo/Turkey /etc/localtime
-RUN echo "Turkey" >  /etc/timezone
+RUN cp /usr/share/zoneinfo/Europe/Istanbul /etc/localtime
+RUN echo "Europe/Istanbul" >  /etc/timezone
 RUN apk del tzdata
 RUN date
 
